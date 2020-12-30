@@ -9,9 +9,9 @@ void PlayGameAtDiff(int difficulty) {
     std::cout << "Your superhacker 2000 tells you the following information...\n";
 
     srand(time(NULL));
-    const int a = rand() % difficulty + difficulty;
-    const int b = rand() % difficulty + difficulty;
-    const int c = rand() % difficulty + difficulty;
+    const int a = rand() % difficulty + 1;
+    const int b = rand() % difficulty + 1;
+    const int c = rand() % difficulty + 1;
 
     const int sum = a + b + c;
     const int product = a * b * c;
@@ -39,7 +39,7 @@ void PlayGameAtDiff(int difficulty) {
         std::cout << "Congratulations, you win!";
     }
     else {
-        std::cout << "Fucking loser\n";
+        std::cout << "Wrong, you guess is incorrect you therefore LOSE, GOOD DAY SIR!\n";
     }
     std::cout << std::endl;
 }
